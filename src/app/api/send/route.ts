@@ -3,9 +3,7 @@ import { Resend } from 'resend'
 import { ContactEmailTemplate } from '@/components/contact-email-template'
 import { type ContactEmailTemplateProps } from '@/types'
 
-export const runtime = 'edge'
-export const dynamic = 'force-dynamic'
-
+// Removed edge runtime to support Node.js features
 const resend = new Resend(process.env.RESEND_API_KEY)
 
 export async function POST(request: Request) {
@@ -26,20 +24,11 @@ export async function POST(request: Request) {
     })
 
     if (error) {
-      return NextResponse.json({
-        status: 500,
-        body: { message: 'Error sending email' }
-      })
+      return NextResponse.json({ message: 'Error sending email' }, { status: 500 })
     }
 
-    return NextResponse.json({
-      status: 200,
-      body: { message: data }
-    })
+    return NextResponse.json({ message: data }, { status: 200 })
   } catch (error) {
-    return NextResponse.json({
-      status: 500,
-      body: { message: error }
-    })
+    return NextResponse.json({ message: 'Unexpected error', error }, { status: 500 })
   }
 }
