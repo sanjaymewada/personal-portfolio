@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from 'react'
 import { ContactForm } from '@/components/contact-form'
-import { MailIcon } from 'lucide-react'
+import { MailIcon, ArrowRight } from 'lucide-react'
 import { motion, useInView, useAnimation } from 'framer-motion'
 import Typed from 'typed.js'
 
@@ -33,40 +33,68 @@ export function Contact() {
   }, [])
 
   return (
-    <motion.div
+    <motion.section
       ref={ref}
       initial={{ opacity: 0, y: 40 }}
       animate={controls}
       transition={{ duration: 0.6, ease: 'easeOut' }}
-      className="space-y-6"
+      className="relative space-y-8 py-12"
     >
-      <motion.h2
-        className="flex gap-x-4 items-center text-3xl font-bold text-balance"
-        initial={{ opacity: 0, x: -20 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ delay: 0.2, duration: 0.5 }}
-      >
-        <MailIcon className="size-6 animate-pulse stroke-[1.5]" />
-        <span ref={typedRef} />
-      </motion.h2>
 
-      <motion.p
-        className="font-mono mx-auto max-w-3xl dark:text-neutral-200 text-neutral-800 text-pretty text-center"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.4, duration: 0.5 }}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.2, duration: 0.5 }}
+        className="text-center space-y-4"
       >
-        Feel free to reach out to me for questions, inquiries, or
-        collaborations. Open to new opportunities and challenges.
-      </motion.p>
+        <motion.div
+          initial={{ scale: 0 }}
+          animate={{ scale: 1 }}
+          transition={{ delay: 0.3, duration: 0.5, type: "spring" }}
+          className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-primary/10 mb-4"
+        >
+          <MailIcon className="size-8 text-primary animate-pulse stroke-[1.5]" />
+        </motion.div>
+
+        <motion.h2
+          className="text-4xl md:text-5xl font-bold text-balance bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.4, duration: 0.5 }}
+        >
+          <span ref={typedRef} />
+        </motion.h2>
+
+        <motion.p
+          className="font-mono mx-auto max-w-2xl text-neutral-600 dark:text-neutral-300 text-pretty text-center text-lg leading-relaxed"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.5, duration: 0.5 }}
+        >
+          Feel free to reach out to me for questions, inquiries, or
+          collaborations. Open to new opportunities and challenges.
+        </motion.p>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.6, duration: 0.5 }}
+          className="flex items-center justify-center gap-2 text-sm text-neutral-500 dark:text-neutral-400"
+        >
+          <span>Let's create something amazing together</span>
+          <ArrowRight className="size-4 animate-pulse" />
+        </motion.div>
+      </motion.div>
 
       <motion.div
         initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 1, scale: 1 }}
-        transition={{ delay: 0.6, duration: 0.5 }}
+        transition={{ delay: 0.7, duration: 0.5 }}
+        className="relative"
       >
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-primary/10 rounded-3xl blur-2xl -z-10" />
         <ContactForm />
       </motion.div>
-    </motion.div>
+    </motion.section>
   )
 }
