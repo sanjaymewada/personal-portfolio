@@ -2,7 +2,8 @@
 
 import { useState } from 'react'
 import { toast } from 'sonner'
-import { motion } from 'framer-motion'
+import { motion, AnimatePresence } from 'framer-motion'
+import { Send, Loader2 } from 'lucide-react'
 
 export function ContactForm() {
   const [form, setForm] = useState({
@@ -46,120 +47,172 @@ export function ContactForm() {
     }
   }
 
-  const inputStyles = `w-full p-2 border border-neutral-300 dark:border-neutral-700 
-    rounded-md bg-white dark:bg-neutral-900 text-black dark:text-white 
+  const inputStyles = `w-full px-4 py-3 border border-neutral-200 dark:border-neutral-800 
+    rounded-xl bg-white/50 dark:bg-neutral-900/50 text-black dark:text-white 
     placeholder:text-neutral-400 dark:placeholder:text-neutral-500 
-    transition duration-200 ease-in-out focus:ring-2 focus:ring-blue-500 
-    hover:border-blue-400 focus:outline-none`
+    transition-all duration-300 ease-in-out
+    focus:ring-2 focus:ring-primary/50 focus:border-primary
+    hover:border-primary/50 focus:outline-none
+    backdrop-blur-sm`
 
   return (
-    <motion.form
-      onSubmit={handleSubmit}
-      initial={{ opacity: 0, y: 10 }}
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.4 }}
-      className='bg-neutral-100 dark:bg-neutral-950 border border-neutral-200 dark:border-neutral-800 rounded-xl shadow-lg p-6 space-y-4 max-w-3xl mx-auto'
+      transition={{ duration: 0.5 }}
+      className="w-full max-w-3xl mx-auto"
     >
-      <p className='text-sm text-neutral-600 dark:text-neutral-400'>
-        Please, fill out the form below and I'll get back to you as soon as possible.
-      </p>
-
-      <div className='grid grid-cols-1 sm:grid-cols-2 gap-4'>
-        <div>
-          <label className='block text-sm font-semibold mb-1 text-neutral-700 dark:text-neutral-300'>
-            First Name<span className='text-red-500'>*</span>
-          </label>
-          <input
-            type='text'
-            name='firstName'
-            value={form.firstName}
-            onChange={handleChange}
-            placeholder='Your first name'
-            className={inputStyles}
-          />
-          {showErrors && !form.firstName && (
-            <motion.p
-              className='text-sm text-red-500 mt-1'
-              initial={{ opacity: 0, y: -5 }}
-              animate={{ opacity: 1, y: 0 }}
-            >
-              First name is required.
-            </motion.p>
-          )}
-        </div>
-        <div>
-          <label className='block text-sm font-semibold mb-1 text-neutral-700 dark:text-neutral-300'>
-            Last Name
-          </label>
-          <input
-            type='text'
-            name='lastName'
-            value={form.lastName}
-            onChange={handleChange}
-            placeholder='Your last name'
-            className={inputStyles}
-          />
-        </div>
-      </div>
-
-      <div>
-        <label className='block text-sm font-semibold mb-1 text-neutral-700 dark:text-neutral-300'>
-          Email<span className='text-red-500'>*</span>
-        </label>
-        <input
-          type='email'
-          name='email'
-          value={form.email}
-          onChange={handleChange}
-          placeholder='you@example.com'
-          className={inputStyles}
-        />
-        {showErrors && !form.email && (
-          <motion.p
-            className='text-sm text-red-500 mt-1'
-            initial={{ opacity: 0, y: -5 }}
-            animate={{ opacity: 1, y: 0 }}
-          >
-            Email is required.
-          </motion.p>
-        )}
-      </div>
-
-      <div>
-        <label className='block text-sm font-semibold mb-1 text-neutral-700 dark:text-neutral-300'>
-          Message<span className='text-red-500'>*</span>
-        </label>
-        <textarea
-          name='message'
-          value={form.message}
-          onChange={handleChange}
-          placeholder='Enter your message here…'
-          rows={4}
-          className={inputStyles}
-        />
-        {showErrors && !form.message && (
-          <motion.p
-            className='text-sm text-red-500 mt-1'
-            initial={{ opacity: 0, y: -5 }}
-            animate={{ opacity: 1, y: 0 }}
-          >
-            Message is required.
-          </motion.p>
-        )}
-      </div>
-
-      <motion.button
-        type='submit'
-        disabled={isSubmitting}
-        whileTap={{ scale: 0.95 }}
-        className={`w-full py-2 rounded-md font-semibold transition-colors ${
-          isSubmitting
-            ? 'bg-neutral-500 dark:bg-neutral-700 cursor-not-allowed text-white'
-            : 'bg-black dark:bg-white text-white dark:text-black hover:bg-neutral-800 dark:hover:bg-neutral-200'
-        }`}
+      <motion.form
+        onSubmit={handleSubmit}
+        className="bg-white/80 dark:bg-black/40 backdrop-blur-xl border border-border/50 rounded-2xl shadow-lg p-8 space-y-6 transition-all duration-300 hover:shadow-xl"
       >
-        {isSubmitting ? 'Sending...' : 'Submit'}
-      </motion.button>
-    </motion.form>
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.1 }}
+        >
+          <h2 className="text-2xl font-bold bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent mb-2">
+            Get in Touch
+          </h2>
+          <p className="text-sm text-neutral-600 dark:text-neutral-400">
+            Please fill out the form below and I'll get back to you as soon as possible.
+          </p>
+        </motion.div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <motion.div
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: 0.2 }}
+          >
+            <label className="block text-sm font-medium mb-2 text-neutral-700 dark:text-neutral-300">
+              First Name<span className="text-red-500 ml-1">*</span>
+            </label>
+            <input
+              type="text"
+              name="firstName"
+              value={form.firstName}
+              onChange={handleChange}
+              placeholder="Your first name"
+              className={inputStyles}
+            />
+            <AnimatePresence>
+              {showErrors && !form.firstName && (
+                <motion.p
+                  initial={{ opacity: 0, y: -5 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -5 }}
+                  className="text-sm text-red-500 mt-1.5"
+                >
+                  First name is required
+                </motion.p>
+              )}
+            </AnimatePresence>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, x: 20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: 0.3 }}
+          >
+            <label className="block text-sm font-medium mb-2 text-neutral-700 dark:text-neutral-300">
+              Last Name
+            </label>
+            <input
+              type="text"
+              name="lastName"
+              value={form.lastName}
+              onChange={handleChange}
+              placeholder="Your last name"
+              className={inputStyles}
+            />
+          </motion.div>
+        </div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.4 }}
+        >
+          <label className="block text-sm font-medium mb-2 text-neutral-700 dark:text-neutral-300">
+            Email<span className="text-red-500 ml-1">*</span>
+          </label>
+          <input
+            type="email"
+            name="email"
+            value={form.email}
+            onChange={handleChange}
+            placeholder="you@example.com"
+            className={inputStyles}
+          />
+          <AnimatePresence>
+            {showErrors && !form.email && (
+              <motion.p
+                initial={{ opacity: 0, y: -5 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -5 }}
+                className="text-sm text-red-500 mt-1.5"
+              >
+                Email is required
+              </motion.p>
+            )}
+          </AnimatePresence>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.5 }}
+        >
+          <label className="block text-sm font-medium mb-2 text-neutral-700 dark:text-neutral-300">
+            Message<span className="text-red-500 ml-1">*</span>
+          </label>
+          <textarea
+            name="message"
+            value={form.message}
+            onChange={handleChange}
+            placeholder="Enter your message here..."
+            rows={4}
+            className={inputStyles}
+          />
+          <AnimatePresence>
+            {showErrors && !form.message && (
+              <motion.p
+                initial={{ opacity: 0, y: -5 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -5 }}
+                className="text-sm text-red-500 mt-1.5"
+              >
+                Message is required
+              </motion.p>
+            )}
+          </AnimatePresence>
+        </motion.div>
+
+        <motion.button
+          type="submit"
+          disabled={isSubmitting}
+          whileHover={{ scale: 1.02 }}
+          whileTap={{ scale: 0.98 }}
+          className={`w-full py-3 rounded-xl font-medium transition-all duration-300 flex items-center justify-center gap-2
+            ${isSubmitting
+              ? 'bg-neutral-200 dark:bg-neutral-800 cursor-not-allowed text-neutral-500 dark:text-neutral-400'
+              : 'bg-primary text-white hover:bg-primary/90 shadow-lg hover:shadow-primary/25'
+            }`}
+        >
+          {isSubmitting ? (
+            <>
+              <Loader2 className="w-5 h-5 animate-spin" />
+              Sending...
+            </>
+          ) : (
+            <>
+              <Send className="w-5 h-5" />
+              Send Message
+            </>
+          )}
+        </motion.button>
+      </motion.form>
+    </motion.div>
   )
 }
