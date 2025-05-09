@@ -7,6 +7,7 @@ import { ProjectPagination } from './project-pagination'
 import { TerminalIcon } from 'lucide-react'
 import { data } from '@/constants'
 import { TypeAnimation } from 'react-type-animation'
+import { motion } from 'framer-motion'
 
 export function Projects() {
   const { projects } = data
@@ -15,37 +16,48 @@ export function Projects() {
   })
 
   return (
-    <>
+    <motion.section
+      initial={{ opacity: 0, y: 40 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.7, ease: 'easeOut' }}
+      className="relative w-full py-12 px-2 md:px-0 space-y-10 overflow-hidden"
+    >
+
       {currentProjects.length === 0 || page < 1 || page > totalPages ? (
-        <Button variant='secondary' size='sm' asChild>
-          <a href='/projects'>No projects found</a>
-        </Button>
+        <div className="flex justify-center items-center min-h-[200px]">
+          <Button variant='secondary' size='sm' asChild>
+            <a href='/projects'>No projects found</a>
+          </Button>
+        </div>
       ) : (
         <>
-          <div className='flex items-center gap-x-4 mb-6'>
-            <TerminalIcon className='size-6 animate-pulse stroke-[1.5] text-neutral-800 dark:text-neutral-100' />
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2, duration: 0.7 }}
+            className='flex items-center gap-x-4 mb-8 justify-center md:justify-start'
+          >
+            <TerminalIcon className='size-7 animate-pulse stroke-[1.5] text-primary' />
             <TypeAnimation
-              sequence={[
-                'Projects & Crafts', // text
-                5000, // wait 5 seconds
-                '', // clear
-              ]}
+              sequence={['Projects & Crafts', 5000, '',]}
               wrapper='h2'
               cursor={true}
               repeat={Infinity}
               speed={50}
-              className='text-3xl font-bold tracking-tight text-neutral-800 dark:text-neutral-100'
+              className='text-4xl font-bold tracking-tight bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent drop-shadow'
             />
-          </div>
+          </motion.div>
 
           <ProjectCard projects={currentProjects} />
-          <ProjectPagination
-            page={page}
-            totalPages={totalPages}
-            updatePage={updatePage}
-          />
+          <div className="flex justify-center pt-8">
+            <ProjectPagination
+              page={page}
+              totalPages={totalPages}
+              updatePage={updatePage}
+            />
+          </div>
         </>
       )}
-    </>
+    </motion.section>
   )
 }
