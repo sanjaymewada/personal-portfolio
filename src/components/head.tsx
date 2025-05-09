@@ -8,7 +8,7 @@ export function Head({ metadata }: { metadata: Metadata }) {
 
       <meta charSet='utf-8' />
       <meta name='viewport' content='width=device-width, initial-scale=1' />
-      <meta name='author' content='Emanuel Peire' />
+      <meta name='author' content='HARSHHAA' />
       <meta name='robots' content='index, follow' />
 
       <meta property='og:title' content={metadata.title?.toString()} />
@@ -16,14 +16,14 @@ export function Head({ metadata }: { metadata: Metadata }) {
         property='og:description'
         content={metadata.description?.toString()}
       />
-      <meta property='og:url' content='https://emapeire.xyz' />
+      <meta property='og:url' content='https://notharshhaa.site' />
       <meta
         property='og:image'
-        content='https://emapeire.xyz/opengraph-image.png'
+        content='https://notharshhaa.site/opengraph-image.png'
       />
       <meta property='og:image:width' content='1200' />
       <meta property='og:image:height' content='630' />
-      <meta property='og:image:alt' content='Emanuel Peire' />
+      <meta property='og:image:alt' content='HARSHHAA' />
       <meta property='og:image:type' content='image/png' />
 
       <meta name='twitter:card' content='summary_large_image' />
@@ -35,11 +35,11 @@ export function Head({ metadata }: { metadata: Metadata }) {
       />
       <meta
         name='twitter:image'
-        content='https://emapeire.xyz/opengraph-image.png'
+        content='https://notharshhaa.site/opengraph-image.png'
       />
       <meta property='twitter:image:width' content='1200' />
       <meta property='twitter:image:height' content='630' />
-      <meta property='twitter:image:alt' content='Emanuel Peire' />
+      <meta property='twitter:image:alt' content='HARSHHAA' />
       <meta property='twitter:image:type' content='image/png' />
 
       <meta name='msapplication-TileColor' content='#000000' />
