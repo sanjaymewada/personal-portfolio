@@ -32,13 +32,13 @@ export function ProjectPagination({
       className="w-full"
     >
       <Pagination>
-        <PaginationContent className='flex flex-wrap items-center justify-center gap-2 sm:gap-4'>
+        <PaginationContent className='flex flex-wrap items-center justify-center gap-2 sm:gap-4 bg-white/70 dark:bg-neutral-900/60 backdrop-blur-xl rounded-xl py-3 px-4 shadow-md border border-border/40'>
           {/* Previous Button */}
           <PaginationItem>
             <PaginationPrevious
               className={clsx(
-                'transition-all duration-200 hover:scale-105',
-                isFirst ? 'pointer-events-none opacity-50' : 'shadow'
+                'transition-all duration-200 hover:scale-105 rounded-full bg-transparent border-none shadow-none text-primary/80 hover:bg-primary/10 focus-visible:ring-2 focus-visible:ring-primary',
+                isFirst ? 'pointer-events-none opacity-50' : ''
               )}
               isActive={!isFirst}
               onClick={() => {
@@ -57,10 +57,10 @@ export function ProjectPagination({
               <button
                 onClick={() => updatePage(num)}
                 className={clsx(
-                  'px-3 py-1 rounded-md text-sm font-mono transition-all duration-150',
+                  'px-4 py-2 rounded-full text-sm font-mono transition-all duration-200 focus-visible:ring-2 focus-visible:ring-primary outline-none',
                   num === page
-                    ? 'bg-blue-600 text-white shadow'
-                    : 'hover:bg-neutral-200 dark:hover:bg-neutral-700 text-neutral-700 dark:text-neutral-300'
+                    ? 'bg-primary text-white shadow-lg scale-105 font-bold border border-primary'
+                    : 'bg-transparent text-primary/80 hover:bg-primary/10 hover:text-primary border border-primary/20'
                 )}
                 aria-current={num === page ? 'page' : undefined}
               >
@@ -73,8 +73,8 @@ export function ProjectPagination({
           <PaginationItem>
             <PaginationNext
               className={clsx(
-                'transition-all duration-200 hover:scale-105',
-                isLast ? 'pointer-events-none opacity-50' : 'shadow'
+                'transition-all duration-200 hover:scale-105 rounded-full bg-transparent border-none shadow-none text-primary/80 hover:bg-primary/10 focus-visible:ring-2 focus-visible:ring-primary',
+                isLast ? 'pointer-events-none opacity-50' : ''
               )}
               isActive={!isLast}
               onClick={() => {
