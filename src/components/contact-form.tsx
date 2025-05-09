@@ -197,7 +197,7 @@ export function ContactForm() {
           className={`w-full py-3 rounded-xl font-medium transition-all duration-300 flex items-center justify-center gap-2
             ${isSubmitting
               ? 'bg-neutral-200 dark:bg-neutral-800 cursor-not-allowed text-neutral-500 dark:text-neutral-400'
-              : 'bg-primary text-white hover:bg-primary/90 shadow-lg hover:shadow-primary/25'
+              : 'bg-primary text-white dark:text-black hover:bg-primary/90 shadow-lg hover:shadow-primary/25 dark:hover:bg-primary/80'
             }`}
         >
           {isSubmitting ? (
