@@ -71,6 +71,10 @@ const config = {
           from: { height: 'var(--radix-accordion-content-height)' },
           to: { height: '0' }
         },
+        blink: {
+          '0%, 100%': { visibility: 'visible' },
+          '50%': { visibility: 'hidden' }
+        },
         // 🔥 Custom Animations
       'pulse-slow': {
         '0%, 100%': { opacity: '1', transform: 'scale(1)' },
@@ -86,7 +90,8 @@ const config = {
         'accordion-up': 'accordion-up 0.2s ease-out',
         // 🔥 Custom animation utilities
         'pulse-slow': 'pulse-slow 2s infinite ease-in-out',
-        glow: 'glow 1.5s infinite ease-in-out'
+        glow: 'glow 1.5s infinite ease-in-out',
+        blink: 'blink 1.2s steps(2, start) infinite'
       }
     }
   },
