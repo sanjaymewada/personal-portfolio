@@ -59,7 +59,7 @@ export function ProjectPagination({
                 className={clsx(
                   'px-4 py-2 rounded-full text-sm font-mono transition-all duration-200 focus-visible:ring-2 focus-visible:ring-primary outline-none',
                   num === page
-                    ? 'bg-primary text-white shadow-lg scale-105 font-bold border border-primary'
+                    ? 'bg-primary text-white dark:text-black shadow-lg scale-105 font-bold border border-primary'
                     : 'bg-transparent text-primary/80 hover:bg-primary/10 hover:text-primary border border-primary/20'
                 )}
                 aria-current={num === page ? 'page' : undefined}
