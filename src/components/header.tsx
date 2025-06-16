@@ -45,35 +45,43 @@ export function Header() {
 
             <nav className="hidden md:flex items-center gap-2">
               {navLinks.map((link) => (
-                <Button asChild variant="ghost" size={null} key={link.label}>
+                <div key={link.label} className="relative">
                   {link.external ? (
                     <a
                       href={link.url}
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label={link.label}
-                      className="rounded-lg px-4 py-2 text-sm font-medium transition-all duration-300 ease-in-out hover:bg-primary/10 hover:text-primary active:bg-primary/20 focus-visible:bg-primary/10"
+                      className="px-4 py-2 text-sm font-medium transition-all duration-300 ease-in-out hover:text-primary relative group"
                     >
                       {link.title}
+                      <span className="absolute bottom-1.5 left-4 right-4 h-0.5 bg-primary transform origin-left scale-x-0 transition-transform duration-300 ease-out group-hover:scale-x-100" />
                     </a>
                   ) : (
                     <Link
                       href={link.url}
                       aria-label={link.label}
                       className={clsx(
-                        'rounded-lg px-4 py-2 text-sm font-medium transition-all duration-300 ease-in-out',
+                        'px-4 py-2 text-sm font-medium transition-all duration-300 ease-in-out relative group',
                         {
-                          'bg-primary/10 text-primary': pathname === link.url,
-                          'hover:bg-primary/10 hover:text-primary': pathname !== link.url,
-                          'active:bg-primary/20': pathname !== link.url,
-                          'focus-visible:bg-primary/10': pathname !== link.url
+                          'text-primary': pathname === link.url,
+                          'hover:text-primary': pathname !== link.url
                         }
                       )}
                     >
                       {link.title}
+                      <span 
+                        className={clsx(
+                          'absolute bottom-1.5 left-4 right-4 h-0.5 bg-primary transform origin-left transition-transform duration-300 ease-out',
+                          {
+                            'scale-x-100': pathname === link.url,
+                            'scale-x-0 group-hover:scale-x-100': pathname !== link.url
+                          }
+                        )}
+                      />
                     </Link>
                   )}
-                </Button>
+                </div>
               ))}
             </nav>
           </div>
@@ -94,38 +102,46 @@ export function Header() {
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
-          className="mt-4 flex md:hidden justify-center flex-wrap gap-2"
+          className="mt-4 flex md:hidden justify-center flex-wrap gap-4"
         >
           {navLinks.map((link) => (
-            <Button asChild variant="ghost" size={null} key={link.label}>
+            <div key={link.label} className="relative">
               {link.external ? (
                 <a
                   href={link.url}
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={link.label}
-                  className="rounded-lg px-4 py-2 text-sm font-medium transition-all duration-300 ease-in-out hover:bg-primary/10 hover:text-primary active:bg-primary/20 focus-visible:bg-primary/10"
+                  className="px-3 py-1.5 text-sm font-medium transition-all duration-300 ease-in-out hover:text-primary relative group"
                 >
                   {link.title}
+                  <span className="absolute bottom-0 left-3 right-3 h-0.5 bg-primary transform origin-left scale-x-0 transition-transform duration-300 ease-out group-hover:scale-x-100" />
                 </a>
               ) : (
                 <Link
                   href={link.url}
                   aria-label={link.label}
                   className={clsx(
-                    'rounded-lg px-4 py-2 text-sm font-medium transition-all duration-300 ease-in-out',
+                    'px-3 py-1.5 text-sm font-medium transition-all duration-300 ease-in-out relative group',
                     {
-                      'bg-primary/10 text-primary': pathname === link.url,
-                      'hover:bg-primary/10 hover:text-primary': pathname !== link.url,
-                      'active:bg-primary/20': pathname !== link.url,
-                      'focus-visible:bg-primary/10': pathname !== link.url
+                      'text-primary': pathname === link.url,
+                      'hover:text-primary': pathname !== link.url
                     }
                   )}
                 >
                   {link.title}
+                  <span 
+                    className={clsx(
+                      'absolute bottom-0 left-3 right-3 h-0.5 bg-primary transform origin-left transition-transform duration-300 ease-out',
+                      {
+                        'scale-x-100': pathname === link.url,
+                        'scale-x-0 group-hover:scale-x-100': pathname !== link.url
+                      }
+                    )}
+                  />
                 </Link>
               )}
-            </Button>
+            </div>
           ))}
         </motion.nav>
       </div>
