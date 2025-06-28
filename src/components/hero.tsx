@@ -130,9 +130,9 @@ export function Hero() {
           </div>
 
           {/* Description with glass effect */}
-          <div className="w-full flex flex-col font-mono gap-3 dark:text-neutral-200 text-neutral-800 text-pretty backdrop-blur-sm bg-white/30 dark:bg-neutral-900/30 p-6 md:p-8 rounded-2xl border border-white/20 dark:border-neutral-800/30 shadow-xl">
-            <p className="font-semibold text-lg md:text-xl bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">{about.title}</p>
-            <h3 className="text-base md:text-lg leading-relaxed opacity-90">{cleanParagraph}</h3>
+          <div className="w-full flex flex-col font-mono gap-2.5 sm:gap-3 dark:text-neutral-200 text-neutral-800 text-pretty sm:backdrop-blur-sm sm:bg-white/30 sm:dark:bg-neutral-900/30 p-5 sm:p-6 md:p-8 sm:rounded-2xl sm:border sm:border-white/20 sm:dark:border-neutral-800/30 sm:shadow-xl">
+            <p className="font-semibold text-lg sm:text-lg md:text-xl bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">{about.title}</p>
+            <h3 className="text-base sm:text-base md:text-lg leading-relaxed opacity-90">{cleanParagraph}</h3>
           </div>
         </motion.div>
 
@@ -141,7 +141,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4, duration: 0.7 }}
-          className="w-full grid grid-cols-2 sm:grid-cols-3 md:flex md:flex-row md:items-center md:justify-center gap-4"
+          className="w-full grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 md:flex md:flex-row md:items-center md:justify-center gap-3 sm:gap-4"
         >
           {links.map((link, index) => (
             <motion.div
@@ -156,7 +156,7 @@ export function Hero() {
                   <Button
                     variant="outline"
                     size={null}
-                    className="w-full md:w-auto min-w-[180px] px-6 py-3 shadow-lg rounded-xl hover:scale-105 transition-all duration-300 border border-primary/20 bg-white/70 dark:bg-neutral-900/60 backdrop-blur-sm hover:shadow-primary/20"
+                    className="w-full md:w-auto min-w-[160px] xs:min-w-[180px] sm:min-w-[180px] px-4 xs:px-5 sm:px-6 py-2.5 sm:py-3 text-sm sm:text-sm shadow-lg rounded-xl hover:scale-105 transition-all duration-300 border border-primary/20 bg-white/70 dark:bg-neutral-900/60 backdrop-blur-sm hover:shadow-primary/20"
                     asChild
                   >
                     <a
@@ -164,10 +164,10 @@ export function Hero() {
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label={link.title}
-                      className="flex items-center justify-center gap-3"
+                      className="flex items-center justify-center gap-2.5 sm:gap-3"
                     >
-                      <link.icon className="size-5 stroke-[1.5] text-primary" />
-                      <p className="font-semibold text-primary/80 text-sm">{link.title}</p>
+                      <link.icon className="size-[1.3rem] sm:size-5 stroke-[1.5] text-primary" />
+                      <p className="font-semibold text-primary/80">{link.title}</p>
                     </a>
                   </Button>
                 </TooltipTrigger>
