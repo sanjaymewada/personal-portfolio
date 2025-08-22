@@ -1,7 +1,6 @@
 'use client'
 
 import type React from 'react'
-import { type Metadata } from 'next'
 import { ViewTransitions } from 'next-view-transitions'
 import { GeistSans } from 'geist/font/sans'
 import { GeistMono } from 'geist/font/mono'
@@ -21,7 +20,7 @@ import { AnimatePresence, motion } from 'framer-motion'
 import { useEffect, useState } from 'react'
 import { usePathname } from 'next/navigation'
 
-const metadata: Metadata = {
+const metadata = {
   title: 'Portfolio | HARSHHAA',
   description: 'My Personal Portfolio - Showcasing my Work and Skills.'
 }

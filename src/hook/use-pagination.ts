@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useMemo, useCallback } from 'react'
 import { useSearchParams } from 'next/navigation'
 import type { ProjectProps } from '@/types'
 
@@ -9,15 +9,23 @@ export function usePagination({ projects }: { projects: ProjectProps[] }) {
   )
 
   const limit = 10
-  const offset = (page - 1) * limit
-  const totalPages = Math.ceil(projects.length / limit)
+  
+  // Memoize expensive calculations
+  const { totalPages, currentProjects } = useMemo(() => {
+    const totalPages = Math.ceil(projects.length / limit)
+    const offset = (page - 1) * limit
+    const currentProjects = projects.slice(offset, offset + limit)
+    
+    return { totalPages, currentProjects }
+  }, [projects, page, limit])
 
-  const updatePage = (newPage: number) => {
-    window.scrollTo({ top: 0 })
-    setPage(newPage)
-  }
-
-  const currentProjects = projects.slice(offset, offset + limit)
+  // Memoize the update function
+  const updatePage = useCallback((newPage: number) => {
+    if (newPage >= 1 && newPage <= totalPages) {
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+      setPage(newPage)
+    }
+  }, [totalPages])
 
   return { currentProjects, page, totalPages, updatePage }
 }
