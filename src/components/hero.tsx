@@ -114,7 +114,7 @@ export function Hero() {
             <Button
               variant='default'
               size={null}
-              className='font-mono font-bold text-xs px-3 py-1.5 rounded-full hover:scale-105 transition-all ease-in-out duration-300 shadow-md bg-gradient-to-r from-primary to-primary/80 text-white dark:text-white/90 border border-primary/30 hover:shadow-lg'
+              className='font-mono font-bold text-xs px-3 py-1.5 rounded-full hover:scale-105 transition-all ease-in-out duration-300 shadow-md bg-gradient-to-r from-primary to-primary/80 text-white dark:text-black border border-primary/30 hover:shadow-lg'
               asChild
             >
               <a
