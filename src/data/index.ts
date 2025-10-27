@@ -19,8 +19,8 @@ import { DevOpsIcon } from '@/components/icons/tags/devops'
 import { FileTextIcon, LinkIcon, MailIcon } from 'lucide-react'
 
 export const AVATAR = {
-  name: 'Harshhaa',
-  initials: 'HR'
+  name: 'Sanjay Mewada',
+  initials: 'SM'
 }
 
 export const ABOUT = {
@@ -31,124 +31,99 @@ export const ABOUT = {
 export const LINKS = [
   {
     title: 'GitHub',
-    url: 'https://github.com/NotHarshhaa',
+    url: 'https://github.com/sanjaymewada',
     icon: GitHubIcon
   },
   {
     title: 'LinkedIn',
-    url: 'https://linkedin.com/in/harshhaa-vardhan-reddy',
+    url: 'https://www.linkedin.com/in/sanjaymewada-',
     icon: LinkedInIcon
   },
   {
     title: 'Telegram',
-    url: 'https://t.me/notharshhaa',
+    url: 'https://t.me/',
     icon: TelegramIcon
   },
   {
     title: 'Resume',
-    url: 'https://cv.notharshhaa.site',
+    url: 'https://cv-mocha-one.vercel.app',
     icon: FileTextIcon
   },
   {
     title: 'Email',
-    url: 'mailto:harshhaa03@gmail.com',
+    url: 'mailto:sanjaymewada786@gmail.com',
     icon: MailIcon
   },
   {
     title: 'Other Links',
-    url: 'https://link.notharshhaa.site',
+    url: '',
     icon: LinkIcon
   }
 ]
 
 export const CAREER = [
   {
-    company: 'DEV Community',
-    link: 'https://dev.to/notharshhaa',
-    badges: ['Remote'],
-    jobs: [
-      {
-        title: 'DevOps/Cloud Content Blogger',
-        start: 'Aug, 2023',
-        end: 'Present',
-        description: [
-          'Published technical blogs on DevOps, cloud platforms, and industry best practices.',
-          'Engaged with the tech community through informative and practical content.',
-          'Focused on delivering value through real-world insights and tutorials.'
-        ]
-      }
-    ]
-  },
-  {
-    company: 'Hashnode',
-    link: 'https://hashnode.com/@prodevopsguy',
-    badges: ['Remote'],
-    jobs: [
-      {
-        title: 'DevOps/Cloud Content Blogger',
-        start: 'Mar, 2022',
-        end: 'Present',
-        description: [
-          'Authored blogs on DevOps, cloud computing, and automation.',
-          'Shared technical insights and best practices with the developer community.',
-          'Contributed to knowledge sharing and community growth through consistent blogging.'
-        ]
-      }
-    ]
-  },
-  {
-    company: 'Tata Consultancy Services',
-    link: 'https://www.tcs.com',
-    badges: ['Hybrid'],
-    jobs: [
-      {
-        title: 'DevOps Engineer',
-        start: 'Mar, 2023',
-        end: 'Present',
-        description: [
-          'Designed, implemented, and maintained CI/CD pipelines to automate build, test, and deployment processes.',
-          'Ensured fast and reliable application delivery through streamlined DevOps practices.',
-          'Deployed applications to AWS and Azure via automated pipelines.',
-          'Reduced manual intervention and improved deployment consistency.'
-        ]
-      }
-    ]
-  },
-  {
-    company: 'IBM',
-    link: 'https://www.ibm.com',
-    badges: ['Remote'],
-    jobs: [
-      {
-        title: 'Cloud DevOps Engineer',
-        start: 'Dec, 2021',
-        end: 'Feb, 2023',
-        description: [
-          'Provisioned AWS resources using Terraform with Infrastructure-as-Code (IaC) practices.',
-          'Managed and containerized microservices using Docker.',
-          'Optimized Docker images and uploaded to AWS ECR.',
-          'Integrated containers with Kubernetes for scalable deployments.'
-        ]
-      }
-    ]
-  },
-  {
-    company: 'JNTUH',
-    link: 'https://jntuh.ac.in',
-    badges: ['OnCampus'],
-    jobs: [
-      {
-        title: 'Bachelor of Technology',
-        start: 'Jul, 2015',
-        end: 'Jun, 2020',
-        description: [
-          'Graduated with a B.Tech degree, gaining a strong foundation in engineering and problem-solving.'
-        ]
-      }
-    ]
-  }
-];
-
+      company: 'ICS industrial Automation Pvt Ltd',
+      link: 'https://www.ics-india.co.in',
+      badges: ['In-Office'],
+      jobs: [
+        {
+          title: 'IT-Executive',
+          start: 'Mar, 2023',
+          end: 'Present',
+          description: [
+            'Progressed from Server/Network support to full Cloud DevOps responsibilities, mastering automation, containerization, and monitoring.',
+            'Worked as a Server Administrator and IT Support, managing Linux/Windows servers, IIS, and troubleshooting issues to ensure high system uptime.',
+            'Skilled in server management (ADDS, DNS,IIS), virtualization (VMware, Hyper-V), and cloud technologies (AWS).',
+            'Automated cloud infrastructure provisioning using Terraform and Ansible across AWS environments, reducing manual efforts.',
+            'Implemented CI/CD pipelines for both on-premises and cloud environments using Jenkins and AWS DevOps, accelerating software delivery.',
+            'Managed Kubernetes clusters and containerized applications with Docker and Helm charts.',
+            'Monitored and optimized system performance with Prometheus, Grafana.',
+            'Collaborated with cross-functional teams to enhance deployment workflows, incident response, and IT operations.',
+            'Ensured cloud resources are secure, compliant, and cost-efficient, integrating IAM, VPC, and Auto Scaling best practices.'
+          ]
+        }
+      ]
+    },
+    {
+      company: 'Ecom-Express',
+      link: 'https://www.ecomexpress.in',
+      badges: ['In-Office'],
+      jobs: [
+        {
+          title: 'Desktop Support Engineer',
+          start: 'Aug, 2022',
+          end: 'Nov, 2022',
+          description: [
+            'Delivered L1/L2 support for desktops, laptops, printers, and networking devices.',
+            'Managed OS deployment, software installation, patching, and Active Directory user management.',
+            'Resolved hardware and software issues promptly, improving end-user productivity.',
+            'Maintained IT asset inventory and supported CCTV and biometric access systems.',
+            'Implemented IT policies and ensured compliance with security standards.'
+          ]
+        }
+      ]
+    },
+    {
+      company: 'Indian Institute of Management (IIM) – Indore',
+      link: 'https://www.iimidr.ac.in',
+      badges: ['In-Office'],
+      jobs: [
+        {
+          title: 'Network Support Engineer',
+          start: 'Feb, 2020',
+          end: 'Oct, 2021',
+          description: [
+            'Monitored and managed LAN/WAN, VLANs, VPNs, and firewalls, ensuring secure and reliable connectivity.',
+            'Configured and troubleshot Cisco routers and switches, improving network performance.',
+            'Supported wireless networks to enhance academic and administrative uptime.',
+            'Documented incidents, performed Root Cause Analysis, and implemented preventive measures to strengthen network reliability.',
+            'Collaborated with IT teams to optimize network operations and maintain compliance.'
+          ]
+        }
+      ]
+    }
+  ];
 const TAGS = {
   GITHUB: {
     name: 'GitHub',
@@ -217,239 +192,92 @@ const TAGS = {
 }
 
 export const PROJECTS = [
-  {
-    title: ' Real-Time DevOps Projects Hub',
-    tags: [TAGS.AWS, TAGS.TERRAFORM, TAGS.DOCKER, TAGS.KUBERNETES, TAGS.LINUX, TAGS.AZURE, TAGS.JENKINS, TAGS.DEVOPS],
-    description: 'A dedicated website featuring real-time DevOps & Cloud projects, from beginner to production-level. Perfect to learn by doing whether its CICD, Kubernetes, Terraform, or monitoring tools, it’s all here!',
-    link: {
-      github: 'https://github.com/NotHarshhaa/projects.prodevopsguytech.com',
-      preview: 'https://projects.prodevopsguytech.com'
+ {
+      title: 'Static Website Hosting with S3, CloudFront & Route 53',
+      techStack: ['S3', 'CloudFront', 'Route 53', 'IAM'],
+      description:
+        'Deployed and hosted a fully static website using Amazon S3, integrated with CloudFront for global content delivery and Route 53 for DNS management. Configured a custom domain with SSL/TLS (HTTPS) using ACM and CloudFront for secure access. Ensured secure access control using IAM policies and S3 bucket permissions.',
+      link: { label: '', href: '' }
     },
-  },
-  {
-    title: 'Ultimate DevOps & Cloud Docs Portal',
-    tags: [TAGS.AWS, TAGS.AZURE, TAGS.DEVOPS],
-    description: 'Struggling to find high-quality learning content? Dive into our portal with 900+ handpicked resources, guides, and docs for AWS, Azure, and DevOps. Perfect for engineers at all levels! and everything you need in one place, accessible with a single click!',
-    link: {
-      github: 'https://gitlab.com/NotHarshhaa/docs-portal',
-      preview: 'https://docs.prodevopsguytech.com'
+    {
+      title: 'Highly Available Web App with Auto Scaling & Load Balancer',
+      techStack: ['EC2', 'ALB', 'Auto Scaling', 'Route 53', 'CloudWatch', 'SNS'],
+      description:
+        'Launched a scalable web application using EC2 instances behind an Application Load Balancer (ALB). Implemented Auto Scaling Groups for dynamic resource management. Integrated Route 53 for DNS resolution, with CloudWatch, SNS, and SQS for monitoring and decoupled alerting.',
+      link: { label: '', href: '' }
     },
-  },
-  {
-    title: 'DevOps Repositories Central Hub',
-    tags: [TAGS.GITHUB, TAGS.DEVOPS],
-    description: 'All the major repositories you’ll ever need — from automation scripts to infra as code to interview prep — curated and organized to help you learn, implement, and grow as a DevOps professional.',
-    link: {
-      github: 'https://github.com/NotHarshhaa/github-repo-status-tracker',
-      preview: 'https://repos.prodevopsguytech.com',
+    {
+      title: 'Automated EC2 Infrastructure with CloudFormation',
+      techStack: ['CloudFormation', 'EC2', 'ALB', 'Auto Scaling', 'IAM', 'User Data', 'Linux', 'Windows'],
+      description:
+        'Created a single CloudFormation YAML template to launch both Linux and Windows EC2 instances. Integrated ALB and Auto Scaling for high availability. Used User Data to auto-install Docker on Linux and IIS on Windows. IAM roles and security groups were defined within the template for secure access. Designed the stack to be reusable across environments with parameters and mappings.',
+      link: { label: '', href: '' }
     },
-  },
-  {
-    title: 'AWS Terraform Workshop',
-    tags: [TAGS.AWS, TAGS.TERRAFORM, TAGS.DEVOPS],
-    description: 'Beginner-friendly guide to setting up AWS infrastructure using Terraform.',
-    link: {
-      github: 'https://github.com/NotHarshhaa/AWS-Terraform-Workshop',
+    {
+      title: 'CI/CD with AWS CodePipeline (Fully Managed Deployment)',
+      techStack: ['CodePipeline', 'CodeCommit', 'CodeBuild', 'CodeDeploy', 'EC2', 'IAM'],
+      description:
+        'Built a fully managed CI/CD pipeline using AWS CodePipeline, integrating CodeCommit, CodeBuild, and CodeDeploy to deploy applications on EC2. Ensured smooth build, test, and deployment stages with version control and rollback support.',
+      link: { label: '', href: '' }
     },
-  },
-  {
-    title: 'ECR-ECS GitHub Deploy',
-    tags: [TAGS.AWS, TAGS.TERRAFORM, TAGS.DOCKER, TAGS.GITHUB_ACTIONS],
-    description: 'Automated deployment of a Python app to AWS ECS using GitHub Actions, Docker, and Terraform.',
-    link: {
-      github: 'https://github.com/NotHarshhaa/tf-ecr-ecs-gh-deploy',
+    {
+      title: 'CI/CD full DevSecOps CodePipeline (Fully automated Deployment)',
+      techStack: [
+        'vscode', 'Git(vcs)', 'GitHub (Code)', 'Docker (Containerization)', 'Dockerhub Registery',
+        'Terraform', 'Ansible', 'Jenkins (CI)', 'SonarQube (Quality)', 'Trivy (Filesystem Scan)',
+        'ArgoCD (CD)', 'Email Notification', 'Helm (Monitoring using grafana and prometheus)'
+      ],
+      description:
+        'Built a fully automated CI/CD pipeline using DevSecOps Pipeline: VS Code → Git → GitHub → Jenkins (CI) → Docker + DockerHub → SonarQube + Trivy (Scan) → Terraform + Ansible → ArgoCD + Helm → EKS → Prometheus + Grafana (Monitoring) → Email Alerts.',
+      link: { label: '', href: '' }
     },
-  },
-  {
-    title: 'EKS Cluster Terraform',
-    tags: [TAGS.AWS_EKS, TAGS.TERRAFORM, TAGS.KUBERNETES],
-    description: 'Terraform-based provisioning of an Amazon EKS Cluster for Kubernetes deployments.',
-    link: {
-      github: 'https://github.com/NotHarshhaa/eks-cluster-terraform',
+    {
+      title: 'Lambda Scheduled EC2 Start/Stop Automation',
+      techStack: ['Lambda', 'EC2', 'CloudWatch Events', 'IAM', 'Python (Boto3)'],
+      description:
+        'Automated scheduled start/stop of EC2 instances using AWS Lambda (Python), triggered by CloudWatch Events to reduce costs during non-peak hours.',
+      link: { label: '', href: '' }
     },
-  },
-  {
-    title: 'CI/CD EKS with GitHub Actions',
-    tags: [TAGS.KUBERNETES, TAGS.GITHUB_ACTIONS, TAGS.TERRAFORM, TAGS.AWS_EKS],
-    description: 'CI/CD pipeline for deploying a Node.js app on Amazon EKS using GitHub Actions, Terraform, and Kubernetes.',
-    link: {
-      github: 'https://github.com/NotHarshhaa/CI-CD_EKS-GitHub_Actions',
+    {
+      title: 'Sample Flask App Full Pipeline',
+      techStack: [
+        'Python', 'k8s', 'GitHub (Code)', 'Docker (Containerization)', 'Jenkins (CI)',
+        'SonarQube (Quality)', 'Trivy (Filesystem Scan)', 'ArgoCD (CD)', 'Redis (Caching)',
+        'Helm (Monitoring using grafana and prometheus)'
+      ],
+      description:
+        'Deployed Python Flask project on kubeadm using Jenkins CI pipeline and ArgoCD CD.',
+      link: { label: 'Full Jenkins Pipeline', href: 'https://github.com/sanjaymewada/fullpipeline' }
     },
-  },
-  {
-    title: 'DevOps Tools',
-    tags: [TAGS.DEVOPS, TAGS.LINUX],
-    description: 'Collection of essential DevOps tools for development, deployment, monitoring, security, and automation.',
-    link: {
-      github: 'https://github.com/NotHarshhaa/devops-tools',
+    {
+      title: 'Prescripto - Doctor Appointment Web App',
+      techStack: ['React.js', 'Node.js', 'Express.js', 'MongoDB'],
+      description:
+        'Created Dockerfile and docker-compose and ran in Docker Desktop.',
+      link: {
+        label: 'Prescripto',
+        href: 'https://github.com/sanjaymewada/prescripto_full-stack_doctor_appointment_app.git'
+      }
     },
-  },
-  {
-    title: 'Certified Kubernetes Administrator',
-    tags: [TAGS.KUBERNETES],
-    description: 'Master Kubernetes from scratch and prepare for the CKA certification.',
-    link: {
-      github: 'https://github.com/NotHarshhaa/Certified_Kubernetes_Administrator',
+    {
+      title: 'Expenses-Tracker-WebApp',
+      techStack: ['Java', 'Spring boot', 'Spring MVC', 'Spring Security', 'Spring Data (JPA)', 'MySQL', 'Thymeleaf', 'Bootstrap'],
+      description:
+        'Forked the project and ran it in local Docker Desktop environment.',
+      link: {
+        label: 'Expenses-Tracker',
+        href: 'https://github.com/sanjaymewada/Expenses-Tracker-WebApp.git'
+      }
     },
-  },
-  {
-    title: 'Kubernetes Dashboard',
-    tags: [TAGS.KUBERNETES, TAGS.PROMETHEUS],
-    description: 'Kubernetes dashboard with integrated health checks and Trivy scanning.',
-    link: {
-      github: 'https://github.com/NotHarshhaa/kubernetes-dashboard',
-    },
-  },
-  {
-    title: 'DevOps Projects Collection',
-    tags: [TAGS.DEVOPS],
-    description: 'Real-world DevOps projects from beginner to advanced levels.',
-    link: {
-      github: 'https://github.com/NotHarshhaa/DevOps-Projects',
-    },
-  },
-  {
-    title: 'Uber Clone (DevSecOps)',
-    tags: [TAGS.UBER, TAGS.DEVOPS],
-    description: 'Full-stack Uber-like transportation application with DevSecOps integration.',
-    link: {
-      github: 'https://github.com/NotHarshhaa/uber-clone',
-    },
-  },
-  {
-    title: 'Kubernetes Projects Learning',
-    tags: [TAGS.KUBERNETES],
-    description: 'Practical Kubernetes projects to master deployment, management, and scaling of containerized applications.',
-    link: {
-      github: 'https://github.com/NotHarshhaa/kubernetes-projects-learning',
-    },
-  },
-  {
-    title: 'AWS EKS Terraform',
-    tags: [TAGS.AWS_EKS, TAGS.TERRAFORM],
-    description: 'Provision Amazon EKS Cluster on AWS using Terraform.',
-    link: {
-      github: 'https://github.com/NotHarshhaa/AWS-EKS_Terraform',
-    },
-  },
-  {
-    title: 'Super Mario on Kubernetes',
-    tags: [TAGS.KUBERNETES, TAGS.TERRAFORM, TAGS.AWS_EKS],
-    description: 'Deploy Super Mario game on Amazon EKS using Terraform.',
-    link: {
-      github: 'https://github.com/NotHarshhaa/Deployment-of-super-Mario-on-Kubernetes-using-terraform',
-    },
-  },
-  {
-    title: 'Cloud Native Monitoring App',
-    tags: [TAGS.DOCKER, TAGS.AWS_EKS],
-    description: 'Monitoring app built with Python, containerized with Docker, and deployed to EKS.',
-    link: {
-      github: 'https://github.com/NotHarshhaa/cloud-native-monitoring-app',
-    },
-  },
-  {
-    title: 'Zomato Clone (DevSecOps)',
-    tags: [TAGS.ZOMATO, TAGS.DEVOPS],
-    description: 'Full-stack food delivery app inspired by Zomato with DevSecOps integration.',
-    link: {
-      github: 'https://github.com/NotHarshhaa/Zomato-Clone',
-    },
-  },
-  {
-    title: 'Learning Prometheus',
-    tags: [TAGS.PROMETHEUS, TAGS.KUBERNETES],
-    description: 'Repository for learning and implementing Prometheus monitoring in Kubernetes environments.',
-    link: {
-      github: 'https://github.com/NotHarshhaa/Learning-Prometheus',
-    },
-  },
-  {
-    title: 'All Things Kubernetes',
-    tags: [TAGS.KUBERNETES],
-    description: 'Comprehensive Kubernetes learning and deployment repository from basic to advanced.',
-    link: {
-      github: 'https://github.com/NotHarshhaa/Kubernetes',
-    },
-  },
-  {
-    title: 'DevOps Setup Installations',
-    tags: [TAGS.DEVOPS, TAGS.LINUX],
-    description: 'Guides for installing and setting up essential DevOps and DevSecOps tools.',
-    link: {
-      github: 'https://github.com/NotHarshhaa/DevOps_Setup-Installations',
-    },
-  },
-  {
-    title: 'DevOps Tool Installer',
-    tags: [TAGS.LINUX, TAGS.DEVOPS],
-    description: 'Automated installation/uninstallation scripts for essential DevOps tools on Linux and Windows.',
-    link: {
-      github: 'https://github.com/NotHarshhaa/DevOps-Tool-Installer',
-    },
-  },
-  {
-    title: 'Kubernetes Learning Path',
-    tags: [TAGS.KUBERNETES],
-    description: 'Step-by-step Kubernetes learning path from beginner to advanced.',
-    link: {
-      github: 'https://github.com/NotHarshhaa/kubernetes-learning-path',
-    },
-  },
-  {
-    title: 'Jenkins Terraform AWS Infra',
-    tags: [TAGS.JENKINS, TAGS.TERRAFORM, TAGS.AWS],
-    description: 'Terraform scripts for AWS infrastructure provisioning with Jenkins integration.',
-    link: {
-      github: 'https://github.com/NotHarshhaa/Jenkins-Terraform-AWS-Infra',
-    },
-  },
-  {
-    title: 'Azure All-in-One',
-    tags: [TAGS.AZURE],
-    description: 'Curated list of Azure resources, libraries, guides, and blogs.',
-    link: {
-      github: 'https://github.com/NotHarshhaa/azure-all_in_one',
-    },
-  },
-  {
-    title: 'AWS Billing Alert Terraform',
-    tags: [TAGS.AWS, TAGS.TERRAFORM],
-    description: 'Terraform module for setting up AWS billing alerts.',
-    link: {
-      github: 'https://github.com/NotHarshhaa/aws-billing-alert-terraform',
-    },
-  },
-  {
-    title: 'AWS DevOps Real-Time Deployment',
-    tags: [TAGS.AWS, TAGS.DEVOPS],
-    description: 'End-to-end AWS DevOps deployment pipeline from Dev to Production.',
-    link: {
-      github: 'https://github.com/NotHarshhaa/AWS-DevOps_Real-Time_Deployment',
-    },
-  },
-  {
-    title: 'DevOps Cheatsheet',
-    tags: [TAGS.DEVOPS],
-    description: 'Quick-reference DevOps cheatsheets covering CI/CD, cloud, security, monitoring, and automation.',
-    link: {
-      github: 'https://github.com/NotHarshhaa/devops-cheatsheet',
-    },
-  },
-  {
-    title: 'DevOps Interview Questions',
-    tags: [TAGS.DEVOPS],
-    description: '550+ DevOps interview questions with detailed answers covering CI/CD, Kubernetes, Terraform, and cloud.',
-    link: {
-      github: 'https://github.com/NotHarshhaa/DevOps-Interview-Questions',
-    },
-  },
-  {
-    title: 'Into the DevOps',
-    tags: [TAGS.DEVOPS, TAGS.LINUX, TAGS.KUBERNETES, TAGS.AWS, TAGS.TERRAFORM],
-    description: 'Comprehensive DevOps interview guide covering Linux, AWS, Kubernetes, Terraform, Docker, and more.',
-    link: {
-      github: 'https://github.com/NotHarshhaa/into-the-devops',
-    },
-  }
-];
+    {
+      title: 'Two-tier-flask-app',
+      techStack: ['Python + Flask', 'MySQL'],
+      description:
+        'Deployed Python Flask project on Docker, Docker Compose.',
+      link: {
+        label: 'two-tier-flask-app',
+        href: 'https://github.com/sanjaymewada/two-tier-flask-app.git'
+      }
+    }
+  ];
+
