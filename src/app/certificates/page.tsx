@@ -9,7 +9,7 @@ export default function CertificatesPage() {
       title: "Microsoft Certified: Azure Fundamentals",
       issuer: "Microsoft",
       date: "2025",
-      image: "/certificates/azure-fundamentals.png",
+      image: "/certificates/Azure-Fundamentals.png",
       link: "https://learn.microsoft.com/en-us/certifications/azure-fundamentals/",
     },
     {
