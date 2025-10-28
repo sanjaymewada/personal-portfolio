@@ -122,7 +122,7 @@ export function Hero() {
           className="flex flex-col md:flex-row items-center gap-6 md:gap-10 justify-center md:justify-start"
         >
           <motion.a
-            href="https://github.com/NotHarshhaa"
+            href="https://github.com/sanjaymewada"
             target="_blank"
             rel="noopener noreferrer"
             className="rounded-full shrink-0 transition-transform duration-300 group"
