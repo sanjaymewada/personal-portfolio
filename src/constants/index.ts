@@ -18,7 +18,7 @@ export const data = {
 export const navLinks = [
   { title: 'About', label: 'about', url: '/' },
   { title: 'Career', label: 'career', url: '/career' },
-  { title: 'Certificates', label: 'Certificates', url: 'https://cv-mocha-one.vercel.app/', external: true },
+  { title: 'Certificates', label: 'certificates', url: '/certificates' }
   { title: 'Projects', label: 'projects', url: '/projects' },
   { title: 'Contact', label: 'contact', url: '/contact' }
 ]
