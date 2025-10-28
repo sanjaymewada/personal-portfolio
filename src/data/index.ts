@@ -63,7 +63,7 @@ export const LINKS = [
 
 export const CAREER = [
   {
-    company: 'ICS industrial Automation Pvt Ltd',
+    company: 'ICS Industrial Automation Pvt Ltd',
     link: 'https://www.ics-india.co.in',
     badges: ['In-Office'],
     jobs: [
@@ -74,7 +74,7 @@ export const CAREER = [
         description: [
           'Progressed from Server/Network support to full Cloud DevOps responsibilities, mastering automation, containerization, and monitoring.',
           'Worked as a Server Administrator and IT Support, managing Linux/Windows servers, IIS, and troubleshooting issues to ensure high system uptime.',
-          'Skilled in server management (ADDS, DNS,IIS), virtualization (VMware, Hyper-V), and cloud technologies (AWS).',
+          'Skilled in server management (ADDS, DNS, IIS), virtualization (VMware, Hyper-V), and cloud technologies (AWS).',
           'Automated cloud infrastructure provisioning using Terraform and Ansible across AWS environments, reducing manual efforts.',
           'Implemented CI/CD pipelines for both on-premises and cloud environments using Jenkins and AWS DevOps, accelerating software delivery.',
           'Managed Kubernetes clusters and containerized applications with Docker and Helm charts.',
@@ -123,191 +123,116 @@ export const CAREER = [
       }
     ]
   }
-];
+]
 
 const TAGS = {
-  GITHUB: {
-    name: 'GitHub',
-    icon: GitHubIcon
-  },
-  GITHUB_ACTIONS: {
-    name: 'GitHub Actions',
-    icon: GitHubActionsIcon
-  },
-  ZOMATO: {
-    name: 'Zomato',
-    icon: ZomatoIcon
-  },
-  UBER: {
-    name: 'Uber',
-    icon: UberIcon
-  },
-  PROMETHEUS: {
-    name: 'Prometheus',
-    icon: PrometheusIcon
-  },
-  AWS_EKS: {
-    name: 'AWS EKS',
-    icon: AWSEKSIcon
-  },
-  LINUX: {
-    name: 'Linux',
-    icon: LinuxIcon
-  },
-  JENKINS: {
-    name: 'Jenkins',
-    icon: JenkinsIcon
-  },
-  KUBERNETES: {
-    name: 'Kubernetes',
-    icon: KubernetesIcon
-  },
-  DOCKER: {
-    name: 'Docker',
-    icon: DockerIcon
-  },
-  AZURE: {
-    name: 'Azure',
-    icon: AzureIcon
-  },
-  AWS: {
-    name: 'AWS',
-    icon: AWSIcon
-  },
-  TERRAFORM: {
-    name: 'Terraform',
-    icon: TerraformIcon
-  },
-  ANSIBLE: {
-    name: 'Ansible',
-    icon: AnsibleIcon
-  },
-  AZURE_DEVOPS: {
-    name: 'Azure DevOps',
-    icon: AzureDevOpsIcon
-  },
-  DEVOPS: {
-    name: 'DevOps',
-    icon: DevOpsIcon
-  }
+  GITHUB: { name: 'GitHub', icon: GitHubIcon },
+  GITHUB_ACTIONS: { name: 'GitHub Actions', icon: GitHubActionsIcon },
+  ZOMATO: { name: 'Zomato', icon: ZomatoIcon },
+  UBER: { name: 'Uber', icon: UberIcon },
+  PROMETHEUS: { name: 'Prometheus', icon: PrometheusIcon },
+  AWS_EKS: { name: 'AWS EKS', icon: AWSEKSIcon },
+  LINUX: { name: 'Linux', icon: LinuxIcon },
+  JENKINS: { name: 'Jenkins', icon: JenkinsIcon },
+  KUBERNETES: { name: 'Kubernetes', icon: KubernetesIcon },
+  DOCKER: { name: 'Docker', icon: DockerIcon },
+  AZURE: { name: 'Azure', icon: AzureIcon },
+  AWS: { name: 'AWS', icon: AWSIcon },
+  TERRAFORM: { name: 'Terraform', icon: TerraformIcon },
+  ANSIBLE: { name: 'Ansible', icon: AnsibleIcon },
+  AZURE_DEVOPS: { name: 'Azure DevOps', icon: AzureDevOpsIcon },
+  DEVOPS: { name: 'DevOps', icon: DevOpsIcon }
 }
 
 export const PROJECTS = [
-
   {
-    title: ' Static Website Hosting with S3, CloudFront & Route 53',
+    title: 'Static Website Hosting with S3, CloudFront & Route 53',
     tags: [TAGS.AWS, TAGS.TERRAFORM, TAGS.DOCKER, TAGS.KUBERNETES, TAGS.LINUX, TAGS.AZURE, TAGS.JENKINS, TAGS.DEVOPS],
     description: 'Deployed and hosted a fully static website using Amazon S3, integrated with CloudFront for global content delivery and Route 53 for DNS management. Configured a custom domain with SSL/TLS (HTTPS).',
     link: {
       github: 'https://github.com/sanjaymewada',
       preview: 'https://github.com/sanjaymewada'
-    },
-  },
-  
-  {
-    title: 'Static Website Hosting with S3, CloudFront & Route 53',
-    tags: [TAGS.AWS, TAGS.TERRAFORM,  TAGS.LINUX, TAGS.AZURE, TAGS.JENKINS],
-    description:
-      'Deployed and hosted a fully static website using Amazon S3, integrated with CloudFront for global content delivery and Route 53 for DNS management. Configured a custom domain with SSL/TLS (HTTPS).',
-    link: {
-      github: 'https://github.com/sanjaymewada',
-      preview: 'https://github.com/sanjaymewada'
-    },
+    }
   },
   {
     title: 'Highly Available Web App with Auto Scaling & Load Balancer',
-     tags: [TAGS.AWS, TAGS.TERRAFORM, TAGS.DOCKER,  TAGS.LINUX, TAGS.AZURE],
-    description:
-      'Launched a scalable web application using EC2 instances behind an Application Load Balancer (ALB). Implemented Auto Scaling Groups for dynamic resource management. Integrated Route 53 for DNS, CloudWatch for monitoring, and SNS for alerts.',
+    tags: [TAGS.AWS, TAGS.TERRAFORM, TAGS.DOCKER, TAGS.LINUX, TAGS.AZURE],
+    description: 'Launched a scalable web application using EC2 instances behind an Application Load Balancer (ALB). Implemented Auto Scaling Groups for dynamic resource management. Integrated Route 53 for DNS, CloudWatch for monitoring, and SNS for alerts.',
     link: {
       github: 'https://github.com/sanjaymewada',
       preview: 'https://github.com/sanjaymewada'
-    },
+    }
   },
   {
     title: 'Automated EC2 Infrastructure with CloudFormation',
     tags: [TAGS.AWS, TAGS.LINUX, TAGS.AZURE],
-    description:
-      'Created a single CloudFormation YAML template to launch both Linux and Windows EC2 instances. Integrated ALB and Auto Scaling for high availability. Used User Data to auto-install Docker on Linux instances and configured IAM roles for secure access.',
-   link: {
+    description: 'Created a single CloudFormation YAML template to launch both Linux and Windows EC2 instances. Integrated ALB and Auto Scaling for high availability. Used User Data to auto-install Docker on Linux instances and configured IAM roles for secure access.',
+    link: {
       github: 'https://github.com/sanjaymewada',
       preview: 'https://github.com/sanjaymewada'
-    },
+    }
   },
   {
     title: 'CI/CD with AWS CodePipeline (Fully Managed Deployment)',
     tags: [TAGS.AWS, TAGS.TERRAFORM, TAGS.DOCKER, TAGS.KUBERNETES, TAGS.LINUX, TAGS.AZURE, TAGS.DEVOPS],
-    description:
-      'Built a fully managed CI/CD pipeline using AWS CodePipeline, integrating CodeCommit, CodeBuild, and CodeDeploy to deploy applications on EC2 instances. Implemented build, test, and deployment stages with rollback support.',
-   link: {
+    description: 'Built a fully managed CI/CD pipeline using AWS CodePipeline, integrating CodeCommit, CodeBuild, and CodeDeploy to deploy applications on EC2 instances. Implemented build, test, and deployment stages with rollback support.',
+    link: {
       github: 'https://github.com/sanjaymewada',
       preview: 'https://github.com/sanjaymewada'
-  },
+    }
   },
   {
     title: 'CI/CD full DevSecOps CodePipeline (Fully automated Deployment)',
-   tags: [TAGS.AWS, TAGS.TERRAFORM, TAGS.DOCKER, TAGS.KUBERNETES, TAGS.LINUX, TAGS.AZURE, TAGS.JENKINS, TAGS.DEVOPS],
-    description:
-      'Built a full DevSecOps pipeline combining CI (Jenkins), containerization (Docker), security scans (SonarQube, Trivy), infrastructure as code (Terraform, Ansible), and continuous delivery with ArgoCD and Helm for monitoring.',
-    link: { label: '', href: '' },
-     link: {
+    tags: [TAGS.AWS, TAGS.TERRAFORM, TAGS.DOCKER, TAGS.KUBERNETES, TAGS.LINUX, TAGS.AZURE, TAGS.JENKINS, TAGS.DEVOPS],
+    description: 'Built a full DevSecOps pipeline combining CI (Jenkins), containerization (Docker), security scans (SonarQube, Trivy), infrastructure as code (Terraform, Ansible), and continuous delivery with ArgoCD and Helm for monitoring.',
+    link: {
       github: 'https://github.com/sanjaymewada',
       preview: 'https://github.com/sanjaymewada'
-  },
+    }
   },
   {
     title: 'Lambda Scheduled EC2 Start/Stop Automation',
     tags: [TAGS.AWS, TAGS.TERRAFORM, TAGS.DOCKER, TAGS.KUBERNETES, TAGS.LINUX, TAGS.AZURE, TAGS.JENKINS, TAGS.DEVOPS],
-    description:
-      'Automated scheduled start/stop of EC2 instances using AWS Lambda (Python), triggered by CloudWatch Events to reduce costs during non-peak hours.',
+    description: 'Automated scheduled start/stop of EC2 instances using AWS Lambda (Python), triggered by CloudWatch Events to reduce costs during non-peak hours.',
     link: {
       github: 'https://github.com/sanjaymewada',
       preview: 'https://github.com/sanjaymewada'
-  },
+    }
   },
   {
     title: 'Sample Flask App Full Pipeline',
-    techStack: [
-      'Python', 'k8s', 'GitHub (Code)', 'Docker (Containerization)', 'Jenkins (CI)',
-      'SonarQube (Quality)', 'Trivy (Filesystem Scan)', 'ArgoCD (CD)', 'Redis (Caching)',
-      'Helm (Monitoring using grafana and prometheus)'
-    ],
-    description:
-      'Deployed a Python Flask project on kubeadm using a Jenkins CI pipeline and ArgoCD for continuous delivery. Implemented monitoring and quality checks as part of the pipeline.',
-     link: {
+    tags: [TAGS.AWS, TAGS.TERRAFORM, TAGS.DOCKER, TAGS.KUBERNETES, TAGS.LINUX, TAGS.AZURE, TAGS.JENKINS, TAGS.DEVOPS],
+    description: 'Deployed a Python Flask project on kubeadm using a Jenkins CI pipeline and ArgoCD for continuous delivery. Implemented monitoring and quality checks as part of the pipeline.',
+    link: {
       github: 'https://github.com/sanjaymewada/fullpipeline',
       preview: 'https://github.com/sanjaymewada'
-  },
+    }
   },
   {
     title: 'Prescripto - Doctor Appointment Web App',
     tags: [TAGS.AWS, TAGS.TERRAFORM, TAGS.DOCKER, TAGS.KUBERNETES, TAGS.LINUX, TAGS.AZURE, TAGS.JENKINS, TAGS.DEVOPS],
-    description:
-      'Created Dockerfile and docker-compose and ran the application in Docker Desktop for local development and testing.',
-  link: {
+    description: 'Created Dockerfile and docker-compose and ran the application in Docker Desktop for local development and testing.',
+    link: {
       github: 'https://github.com/sanjaymewada/prescripto_full-stack_doctor_appointment_app.git',
       preview: 'https://github.com/sanjaymewada'
+    }
   },
-    
-  
   {
     title: 'Expenses-Tracker-WebApp',
     tags: [TAGS.AWS, TAGS.TERRAFORM, TAGS.DOCKER, TAGS.KUBERNETES, TAGS.LINUX, TAGS.AZURE, TAGS.JENKINS, TAGS.DEVOPS],
-    description:
-      'Forked the project and ran it in a local Docker Desktop environment for evaluation and development.',
-     link: {
+    description: 'Forked the project and ran it in a local Docker Desktop environment for evaluation and development.',
+    link: {
       github: 'https://github.com/sanjaymewada/Expenses-Tracker-WebApp.git',
       preview: 'https://github.com/sanjaymewada'
-  },
+    }
   },
   {
     title: 'Two-tier-flask-app',
     tags: [TAGS.AWS, TAGS.TERRAFORM, TAGS.DOCKER, TAGS.KUBERNETES, TAGS.LINUX, TAGS.AZURE, TAGS.DEVOPS],
-    description:
-      'Deployed a two-tier Python Flask application using Docker and Docker Compose for container orchestration and local testing.',
+    description: 'Deployed a two-tier Python Flask application using Docker and Docker Compose for container orchestration and local testing.',
     link: {
       github: 'https://github.com/sanjaymewada/two-tier-flask-app.git',
       preview: 'https://github.com/sanjaymewada'
-  },   
+    }
   }
-];
+]
