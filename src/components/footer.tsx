@@ -36,7 +36,7 @@ export function Footer() {
               rel="noopener noreferrer"
               className="bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent font-semibold hover:opacity-80 transition-all duration-300"
             >
-              H A R S H H A A
+              S A N J A Y
             </a>
             <span className="mx-2 text-primary/50">—</span>
             <span className="text-neutral-600 dark:text-neutral-400">All rights reserved.</span>
