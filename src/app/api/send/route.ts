@@ -38,7 +38,7 @@ export async function POST(request: Request) {
 
     const { data, error } = await resend.emails.send({
       from: 'Harshhaa Portfolio <noreply@notharshhaa.site>',
-      to: 'harshhaa03@gmail.com',
+      to: 'sanjaymewada786@gmail.com',
       subject: `New message from ${firstName} ${lastName}`,
       react: ContactEmailTemplate({
         firstName,
