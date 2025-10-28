@@ -31,7 +31,7 @@ export function Footer() {
             © {year}
             <span className="mx-2 text-primary/50">•</span>
             <a
-              href="https://link.notharshhaa.site"
+              href="https://cv-mocha-one.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent font-semibold hover:opacity-80 transition-all duration-300"
