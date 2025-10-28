@@ -1,25 +1,25 @@
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Portfolio | HARSHHAA',
+  title: 'Portfolio | SANJAY',
   description: 'My Personal Portfolio - Showcasing my Work and Skills.',
   keywords: ['DevOps', 'Cloud Engineer', 'AWS', 'Azure', 'Kubernetes', 'Terraform', 'Portfolio'],
-  authors: [{ name: 'Harshhaa Vardhan Reddy' }],
-  creator: 'Harshhaa Vardhan Reddy',
-  publisher: 'Harshhaa Vardhan Reddy',
+  authors: [{ name: 'Sanjay Mewada' }],
+  creator: 'SANJAY',
+  publisher: 'SANJAY',
   formatDetection: {
     email: false,
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://notharshhaa.site'),
+  metadataBase: new URL('https://personal-portfolio-red-nine.vercel.app/'),
   alternates: {
     canonical: '/',
   },
   openGraph: {
     title: 'Portfolio | HARSHHAA',
     description: 'My Personal Portfolio - Showcasing my Work and Skills.',
-    url: 'https://notharshhaa.site',
+    url: 'https://personal-portfolio-red-nine.vercel.app/',
     siteName: 'HARSHHAA Portfolio',
     images: [
       {
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Portfolio | HARSHHAA',
+    title: 'Portfolio | SANJAY',
     description: 'My Personal Portfolio - Showcasing my Work and Skills.',
     images: ['/opengraph-image.png'],
   },
