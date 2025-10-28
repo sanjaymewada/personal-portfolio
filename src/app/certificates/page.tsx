@@ -10,14 +10,14 @@ export default function CertificatesPage() {
       title: "Microsoft Certified: Azure Fundamentals",
       issuer: "Microsoft",
       date: "2025",
-      image: "/certificates/azure-fundamentals.png",
+      image: "/public/certificates/azure-fundamentals.png",
       link: "https://learn.microsoft.com/en-us/certifications/azure-fundamentals/",
     },
     {
       title: "AWS Cloud Practitioner",
       issuer: "AWS & Simplilearn",
       date: "Oct 2025",
-      image: "/certificates/aws-cert.png",
+      image: "/pulic/certificates/aws-cert.png",
       link: "https://www.credly.com/badges/your-cert-link",
     },
     {
