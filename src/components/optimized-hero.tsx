@@ -153,7 +153,7 @@ export function Hero() {
         >
           <div className="flex items-center gap-4 flex-wrap justify-center md:justify-start">
             <TypingText
-              text="Harshhaa Vardhan Reddy"
+              text="Sanjay Mewada"
               className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-primary via-primary/80 to-primary/60 bg-clip-text text-transparent drop-shadow-sm"
             />
             <Button
@@ -163,7 +163,7 @@ export function Hero() {
               asChild
             >
               <a
-                href="https://linkedin.com/in/harshhaa-vardhan-reddy"
+                href="https://linkedin.com/in/sanjaymewada-"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hidden md:flex items-center gap-1.5"
