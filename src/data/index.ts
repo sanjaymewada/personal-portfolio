@@ -193,6 +193,17 @@ const TAGS = {
 }
 
 export const PROJECTS = [
+
+  {
+    title: ' Static Website Hosting with S3, CloudFront & Route 53',
+    tags: [TAGS.AWS, TAGS.TERRAFORM, TAGS.DOCKER, TAGS.KUBERNETES, TAGS.LINUX, TAGS.AZURE, TAGS.JENKINS, TAGS.DEVOPS],
+    description: 'Deployed and hosted a fully static website using Amazon S3, integrated with CloudFront for global content delivery and Route 53 for DNS management. Configured a custom domain with SSL/TLS (HTTPS).',
+    link: {
+      github: 'https://github.com/sanjaymewada',
+      preview: 'https://github.com/sanjaymewada'
+    },
+  },
+  
   {
     title: 'Static Website Hosting with S3, CloudFront & Route 53',
     techStack: ['S3', 'CloudFront', 'Route 53', 'IAM'],
