@@ -2,6 +2,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function CertificatesPage() {
   const certificates = [
@@ -36,11 +37,25 @@ export default function CertificatesPage() {
         My Certificates & Training
       </h1>
 
-      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <motion.div
+        className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8"
+        initial="hidden"
+        animate="visible"
+        variants={{
+          hidden: {},
+          visible: { transition: { staggerChildren: 0.2 } },
+        }}
+      >
         {certificates.map((cert, idx) => (
-          <div
+          <motion.div
             key={idx}
-            className="rounded-xl border border-gray-200 dark:border-gray-800 shadow-lg p-5 hover:scale-105 transition cursor-pointer"
+            variants={{
+              hidden: { opacity: 0, y: 30 },
+              visible: { opacity: 1, y: 0 },
+            }}
+            transition={{ duration: 0.4 }}
+            whileHover={{ scale: 1.05 }}
+            className="rounded-xl border border-gray-200 dark:border-gray-800 shadow-lg p-5 cursor-pointer hover:shadow-2xl transition"
             onClick={() => setPreview(cert.image)}
           >
             <Image
@@ -64,33 +79,44 @@ export default function CertificatesPage() {
             >
               View Certificate
             </Link>
-          </div>
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
 
-      {/* Preview Modal */}
-      {preview && (
-        <div
-          className="fixed inset-0 bg-black/70 backdrop-blur-sm flex items-center justify-center z-50 overflow-auto pt-20 pb-20"
-          onClick={() => setPreview(null)}
-        >
-          <div className="relative max-w-3xl w-full mx-4">
-            <Image
-              src={preview}
-              alt="Certificate Preview"
-              width={1200}
-              height={800}
-              className="rounded-lg shadow-2xl mx-auto max-h-[80vh] object-contain"
-            />
-            <button
-              className="absolute top-3 right-3 bg-white text-black rounded-full px-3 py-1 shadow-lg"
-              onClick={() => setPreview(null)}
+      {/* Modal Preview with Animation */}
+      <AnimatePresence>
+        {preview && (
+          <motion.div
+            className="fixed inset-0 bg-black/70 backdrop-blur-sm flex items-center justify-center z-50 overflow-auto pt-20 pb-20"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onClick={() => setPreview(null)}
+          >
+            <motion.div
+              className="relative max-w-3xl w-full mx-4"
+              initial={{ scale: 0.8, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.8, opacity: 0 }}
+              transition={{ duration: 0.3, ease: 'easeInOut' }}
             >
-              ✕
-            </button>
-          </div>
-        </div>
-      )}
+              <Image
+                src={preview}
+                alt="Certificate Preview"
+                width={1200}
+                height={800}
+                className="rounded-lg shadow-2xl mx-auto max-h-[80vh] object-contain"
+              />
+              <button
+                className="absolute top-3 right-3 bg-white text-black rounded-full px-3 py-1 shadow-lg"
+                onClick={() => setPreview(null)}
+              >
+                ✕
+              </button>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </main>
   );
 }
