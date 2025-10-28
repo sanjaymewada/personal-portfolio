@@ -25,7 +25,7 @@ export const AVATAR = {
 
 export const ABOUT = {
   title: `DevOps Engineer focused on automation, scalability, and cloud infrastructure. Based in Hyderabad, India 🇮🇳`,
-  description: `I'm a passionate DevOps Engineer on a mission to automate everything and build highly scalable cloud infrastructures. With a strong focus on cloud computing, automation, and DevOps best practices, I specialize in streamlining deployments, optimizing workflows, and maintaining high-performance infrastructure. I work on real-time DevOps and cloud projects involving AWS, Azure, Terraform, Kubernetes, and Docker. I also develop automation scripts for tool installations and configurations, create comprehensive interview preparation content and cheat sheets, design curated learning paths for engineers at all levels, and foster collaborative spaces for open-source contributions and knowledge sharing.`
+  description: `I'm a passionate DevOps Engineer on a mission to automate everything and build highly scalable cloud infrastructures. With a strong focus on cloud computing, automation, and DevOps best practices, I enjoy solving complex infrastructure challenges, improving CI/CD pipelines, and making systems more reliable and observable.`
 }
 
 export const LINKS = [
@@ -63,67 +63,68 @@ export const LINKS = [
 
 export const CAREER = [
   {
-      company: 'ICS industrial Automation Pvt Ltd',
-      link: 'https://www.ics-india.co.in',
-      badges: ['In-Office'],
-      jobs: [
-        {
-          title: 'IT-Executive',
-          start: 'Mar, 2023',
-          end: 'Present',
-          description: [
-            'Progressed from Server/Network support to full Cloud DevOps responsibilities, mastering automation, containerization, and monitoring.',
-            'Worked as a Server Administrator and IT Support, managing Linux/Windows servers, IIS, and troubleshooting issues to ensure high system uptime.',
-            'Skilled in server management (ADDS, DNS,IIS), virtualization (VMware, Hyper-V), and cloud technologies (AWS).',
-            'Automated cloud infrastructure provisioning using Terraform and Ansible across AWS environments, reducing manual efforts.',
-            'Implemented CI/CD pipelines for both on-premises and cloud environments using Jenkins and AWS DevOps, accelerating software delivery.',
-            'Managed Kubernetes clusters and containerized applications with Docker and Helm charts.',
-            'Monitored and optimized system performance with Prometheus, Grafana.',
-            'Collaborated with cross-functional teams to enhance deployment workflows, incident response, and IT operations.',
-            'Ensured cloud resources are secure, compliant, and cost-efficient, integrating IAM, VPC, and Auto Scaling best practices.'
-          ]
-        }
-      ]
-    },
-    {
-      company: 'Ecom-Express',
-      link: 'https://www.ecomexpress.in',
-      badges: ['In-Office'],
-      jobs: [
-        {
-          title: 'Desktop Support Engineer',
-          start: 'Aug, 2022',
-          end: 'Nov, 2022',
-          description: [
-            'Delivered L1/L2 support for desktops, laptops, printers, and networking devices.',
-            'Managed OS deployment, software installation, patching, and Active Directory user management.',
-            'Resolved hardware and software issues promptly, improving end-user productivity.',
-            'Maintained IT asset inventory and supported CCTV and biometric access systems.',
-            'Implemented IT policies and ensured compliance with security standards.'
-          ]
-        }
-      ]
-    },
-    {
-      company: 'Indian Institute of Management (IIM) – Indore',
-      link: 'https://www.iimidr.ac.in',
-      badges: ['In-Office'],
-      jobs: [
-        {
-          title: 'Network Support Engineer',
-          start: 'Feb, 2020',
-          end: 'Oct, 2021',
-          description: [
-            'Monitored and managed LAN/WAN, VLANs, VPNs, and firewalls, ensuring secure and reliable connectivity.',
-            'Configured and troubleshot Cisco routers and switches, improving network performance.',
-            'Supported wireless networks to enhance academic and administrative uptime.',
-            'Documented incidents, performed Root Cause Analysis, and implemented preventive measures to strengthen network reliability.',
-            'Collaborated with IT teams to optimize network operations and maintain compliance.'
-          ]
-        }
-      ]
-    }
-  ];
+    company: 'ICS industrial Automation Pvt Ltd',
+    link: 'https://www.ics-india.co.in',
+    badges: ['In-Office'],
+    jobs: [
+      {
+        title: 'IT-Executive',
+        start: 'Mar, 2023',
+        end: 'Present',
+        description: [
+          'Progressed from Server/Network support to full Cloud DevOps responsibilities, mastering automation, containerization, and monitoring.',
+          'Worked as a Server Administrator and IT Support, managing Linux/Windows servers, IIS, and troubleshooting issues to ensure high system uptime.',
+          'Skilled in server management (ADDS, DNS,IIS), virtualization (VMware, Hyper-V), and cloud technologies (AWS).',
+          'Automated cloud infrastructure provisioning using Terraform and Ansible across AWS environments, reducing manual efforts.',
+          'Implemented CI/CD pipelines for both on-premises and cloud environments using Jenkins and AWS DevOps, accelerating software delivery.',
+          'Managed Kubernetes clusters and containerized applications with Docker and Helm charts.',
+          'Monitored and optimized system performance with Prometheus, Grafana.',
+          'Collaborated with cross-functional teams to enhance deployment workflows, incident response, and IT operations.',
+          'Ensured cloud resources are secure, compliant, and cost-efficient, integrating IAM, VPC, and Auto Scaling best practices.'
+        ]
+      }
+    ]
+  },
+  {
+    company: 'Ecom-Express',
+    link: 'https://www.ecomexpress.in',
+    badges: ['In-Office'],
+    jobs: [
+      {
+        title: 'Desktop Support Engineer',
+        start: 'Aug, 2022',
+        end: 'Nov, 2022',
+        description: [
+          'Delivered L1/L2 support for desktops, laptops, printers, and networking devices.',
+          'Managed OS deployment, software installation, patching, and Active Directory user management.',
+          'Resolved hardware and software issues promptly, improving end-user productivity.',
+          'Maintained IT asset inventory and supported CCTV and biometric access systems.',
+          'Implemented IT policies and ensured compliance with security standards.'
+        ]
+      }
+    ]
+  },
+  {
+    company: 'Indian Institute of Management (IIM) – Indore',
+    link: 'https://www.iimidr.ac.in',
+    badges: ['In-Office'],
+    jobs: [
+      {
+        title: 'Network Support Engineer',
+        start: 'Feb, 2020',
+        end: 'Oct, 2021',
+        description: [
+          'Monitored and managed LAN/WAN, VLANs, VPNs, and firewalls, ensuring secure and reliable connectivity.',
+          'Configured and troubleshot Cisco routers and switches, improving network performance.',
+          'Supported wireless networks to enhance academic and administrative uptime.',
+          'Documented incidents, performed Root Cause Analysis, and implemented preventive measures to strengthen network reliability.',
+          'Collaborated with IT teams to optimize network operations and maintain compliance.'
+        ]
+      }
+    ]
+  }
+];
+
 const TAGS = {
   GITHUB: {
     name: 'GitHub',
@@ -192,92 +193,91 @@ const TAGS = {
 }
 
 export const PROJECTS = [
- {
-      title: 'Static Website Hosting with S3, CloudFront & Route 53',
-      techStack: ['S3', 'CloudFront', 'Route 53', 'IAM'],
-      description:
-        'Deployed and hosted a fully static website using Amazon S3, integrated with CloudFront for global content delivery and Route 53 for DNS management. Configured a custom domain with SSL/TLS (HTTPS) using ACM and CloudFront for secure access. Ensured secure access control using IAM policies and S3 bucket permissions.',
-      link: { label: '', href: '' }
-    },
-    {
-      title: 'Highly Available Web App with Auto Scaling & Load Balancer',
-      techStack: ['EC2', 'ALB', 'Auto Scaling', 'Route 53', 'CloudWatch', 'SNS'],
-      description:
-        'Launched a scalable web application using EC2 instances behind an Application Load Balancer (ALB). Implemented Auto Scaling Groups for dynamic resource management. Integrated Route 53 for DNS resolution, with CloudWatch, SNS, and SQS for monitoring and decoupled alerting.',
-      link: { label: '', href: '' }
-    },
-    {
-      title: 'Automated EC2 Infrastructure with CloudFormation',
-      techStack: ['CloudFormation', 'EC2', 'ALB', 'Auto Scaling', 'IAM', 'User Data', 'Linux', 'Windows'],
-      description:
-        'Created a single CloudFormation YAML template to launch both Linux and Windows EC2 instances. Integrated ALB and Auto Scaling for high availability. Used User Data to auto-install Docker on Linux and IIS on Windows. IAM roles and security groups were defined within the template for secure access. Designed the stack to be reusable across environments with parameters and mappings.',
-      link: { label: '', href: '' }
-    },
-    {
-      title: 'CI/CD with AWS CodePipeline (Fully Managed Deployment)',
-      techStack: ['CodePipeline', 'CodeCommit', 'CodeBuild', 'CodeDeploy', 'EC2', 'IAM'],
-      description:
-        'Built a fully managed CI/CD pipeline using AWS CodePipeline, integrating CodeCommit, CodeBuild, and CodeDeploy to deploy applications on EC2. Ensured smooth build, test, and deployment stages with version control and rollback support.',
-      link: { label: '', href: '' }
-    },
-    {
-      title: 'CI/CD full DevSecOps CodePipeline (Fully automated Deployment)',
-      techStack: [
-        'vscode', 'Git(vcs)', 'GitHub (Code)', 'Docker (Containerization)', 'Dockerhub Registery',
-        'Terraform', 'Ansible', 'Jenkins (CI)', 'SonarQube (Quality)', 'Trivy (Filesystem Scan)',
-        'ArgoCD (CD)', 'Email Notification', 'Helm (Monitoring using grafana and prometheus)'
-      ],
-      description:
-        'Built a fully automated CI/CD pipeline using DevSecOps Pipeline: VS Code → Git → GitHub → Jenkins (CI) → Docker + DockerHub → SonarQube + Trivy (Scan) → Terraform + Ansible → ArgoCD + Helm → EKS → Prometheus + Grafana (Monitoring) → Email Alerts.',
-      link: { label: '', href: '' }
-    },
-    {
-      title: 'Lambda Scheduled EC2 Start/Stop Automation',
-      techStack: ['Lambda', 'EC2', 'CloudWatch Events', 'IAM', 'Python (Boto3)'],
-      description:
-        'Automated scheduled start/stop of EC2 instances using AWS Lambda (Python), triggered by CloudWatch Events to reduce costs during non-peak hours.',
-      link: { label: '', href: '' }
-    },
-    {
-      title: 'Sample Flask App Full Pipeline',
-      techStack: [
-        'Python', 'k8s', 'GitHub (Code)', 'Docker (Containerization)', 'Jenkins (CI)',
-        'SonarQube (Quality)', 'Trivy (Filesystem Scan)', 'ArgoCD (CD)', 'Redis (Caching)',
-        'Helm (Monitoring using grafana and prometheus)'
-      ],
-      description:
-        'Deployed Python Flask project on kubeadm using Jenkins CI pipeline and ArgoCD CD.',
-      link: { label: 'Full Jenkins Pipeline', href: 'https://github.com/sanjaymewada/fullpipeline' }
-    },
-    {
-      title: 'Prescripto - Doctor Appointment Web App',
-      techStack: ['React.js', 'Node.js', 'Express.js', 'MongoDB'],
-      description:
-        'Created Dockerfile and docker-compose and ran in Docker Desktop.',
-      link: {
-        label: 'Prescripto',
-        href: 'https://github.com/sanjaymewada/prescripto_full-stack_doctor_appointment_app.git'
-      }
-    },
-    {
-      title: 'Expenses-Tracker-WebApp',
-      techStack: ['Java', 'Spring boot', 'Spring MVC', 'Spring Security', 'Spring Data (JPA)', 'MySQL', 'Thymeleaf', 'Bootstrap'],
-      description:
-        'Forked the project and ran it in local Docker Desktop environment.',
-      link: {
-        label: 'Expenses-Tracker',
-        href: 'https://github.com/sanjaymewada/Expenses-Tracker-WebApp.git'
-      }
-    },
-    {
-      title: 'Two-tier-flask-app',
-      techStack: ['Python + Flask', 'MySQL'],
-      description:
-        'Deployed Python Flask project on Docker, Docker Compose.',
-      link: {
-        label: 'two-tier-flask-app',
-        href: 'https://github.com/sanjaymewada/two-tier-flask-app.git'
-      }
+  {
+    title: 'Static Website Hosting with S3, CloudFront & Route 53',
+    techStack: ['S3', 'CloudFront', 'Route 53', 'IAM'],
+    description:
+      'Deployed and hosted a fully static website using Amazon S3, integrated with CloudFront for global content delivery and Route 53 for DNS management. Configured a custom domain with SSL/TLS (HTTPS).',
+    link: { label: '', href: '' }
+  },
+  {
+    title: 'Highly Available Web App with Auto Scaling & Load Balancer',
+    techStack: ['EC2', 'ALB', 'Auto Scaling', 'Route 53', 'CloudWatch', 'SNS'],
+    description:
+      'Launched a scalable web application using EC2 instances behind an Application Load Balancer (ALB). Implemented Auto Scaling Groups for dynamic resource management. Integrated Route 53 for DNS, CloudWatch for monitoring, and SNS for alerts.',
+    link: { label: '', href: '' }
+  },
+  {
+    title: 'Automated EC2 Infrastructure with CloudFormation',
+    techStack: ['CloudFormation', 'EC2', 'ALB', 'Auto Scaling', 'IAM', 'User Data', 'Linux', 'Windows'],
+    description:
+      'Created a single CloudFormation YAML template to launch both Linux and Windows EC2 instances. Integrated ALB and Auto Scaling for high availability. Used User Data to auto-install Docker on Linux instances and configured IAM roles for secure access.',
+    link: { label: '', href: '' }
+  },
+  {
+    title: 'CI/CD with AWS CodePipeline (Fully Managed Deployment)',
+    techStack: ['CodePipeline', 'CodeCommit', 'CodeBuild', 'CodeDeploy', 'EC2', 'IAM'],
+    description:
+      'Built a fully managed CI/CD pipeline using AWS CodePipeline, integrating CodeCommit, CodeBuild, and CodeDeploy to deploy applications on EC2 instances. Implemented build, test, and deployment stages with rollback support.',
+    link: { label: '', href: '' }
+  },
+  {
+    title: 'CI/CD full DevSecOps CodePipeline (Fully automated Deployment)',
+    techStack: [
+      'vscode', 'Git(vcs)', 'GitHub (Code)', 'Docker (Containerization)', 'Dockerhub Registery',
+      'Terraform', 'Ansible', 'Jenkins (CI)', 'SonarQube (Quality)', 'Trivy (Filesystem Scan)',
+      'ArgoCD (CD)', 'Email Notification', 'Helm (Monitoring using grafana and prometheus)'
+    ],
+    description:
+      'Built a full DevSecOps pipeline combining CI (Jenkins), containerization (Docker), security scans (SonarQube, Trivy), infrastructure as code (Terraform, Ansible), and continuous delivery with ArgoCD and Helm for monitoring.',
+    link: { label: '', href: '' }
+  },
+  {
+    title: 'Lambda Scheduled EC2 Start/Stop Automation',
+    techStack: ['Lambda', 'EC2', 'CloudWatch Events', 'IAM', 'Python (Boto3)'],
+    description:
+      'Automated scheduled start/stop of EC2 instances using AWS Lambda (Python), triggered by CloudWatch Events to reduce costs during non-peak hours.',
+    link: { label: '', href: '' }
+  },
+  {
+    title: 'Sample Flask App Full Pipeline',
+    techStack: [
+      'Python', 'k8s', 'GitHub (Code)', 'Docker (Containerization)', 'Jenkins (CI)',
+      'SonarQube (Quality)', 'Trivy (Filesystem Scan)', 'ArgoCD (CD)', 'Redis (Caching)',
+      'Helm (Monitoring using grafana and prometheus)'
+    ],
+    description:
+      'Deployed a Python Flask project on kubeadm using a Jenkins CI pipeline and ArgoCD for continuous delivery. Implemented monitoring and quality checks as part of the pipeline.',
+    link: { label: 'Full Jenkins Pipeline', href: 'https://github.com/sanjaymewada/fullpipeline' }
+  },
+  {
+    title: 'Prescripto - Doctor Appointment Web App',
+    techStack: ['React.js', 'Node.js', 'Express.js', 'MongoDB'],
+    description:
+      'Created Dockerfile and docker-compose and ran the application in Docker Desktop for local development and testing.',
+    link: {
+      label: 'Prescripto',
+      href: 'https://github.com/sanjaymewada/prescripto_full-stack_doctor_appointment_app.git'
     }
-  ];
-
+  },
+  {
+    title: 'Expenses-Tracker-WebApp',
+    techStack: ['Java', 'Spring boot', 'Spring MVC', 'Spring Security', 'Spring Data (JPA)', 'MySQL', 'Thymeleaf', 'Bootstrap'],
+    description:
+      'Forked the project and ran it in a local Docker Desktop environment for evaluation and development.',
+    link: {
+      label: 'Expenses-Tracker',
+      href: 'https://github.com/sanjaymewada/Expenses-Tracker-WebApp.git'
+    }
+  },
+  {
+    title: 'Two-tier-flask-app',
+    techStack: ['Python + Flask', 'MySQL'],
+    description:
+      'Deployed a two-tier Python Flask application using Docker and Docker Compose for container orchestration and local testing.',
+    link: {
+      label: 'two-tier-flask-app',
+      href: 'https://github.com/sanjaymewada/two-tier-flask-app.git'
+    }
+  }
+];
