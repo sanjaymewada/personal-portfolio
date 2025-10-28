@@ -16,14 +16,14 @@ export function Head({ metadata }: { metadata: Metadata }) {
         property='og:description'
         content={metadata.description?.toString()}
       />
-      <meta property='og:url' content='https://notharshhaa.site' />
+      <meta property='og:url' content='https://cv-mocha-one.vercel.app/' />
       <meta
         property='og:image'
         content='https://notharshhaa.site/opengraph-image.png'
       />
       <meta property='og:image:width' content='1200' />
       <meta property='og:image:height' content='630' />
-      <meta property='og:image:alt' content='HARSHHAA' />
+      <meta property='og:image:alt' content='SANJAY' />
       <meta property='og:image:type' content='image/png' />
 
       <meta name='twitter:card' content='summary_large_image' />
