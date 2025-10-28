@@ -302,7 +302,7 @@ export const PROJECTS = [
   },
   {
     title: 'Two-tier-flask-app',
-    tags: [TAGS.AWS, TAGS.TERRAFORM, TAGS.DOCKER, TAGS.KUBERNETES, TAGS.LINUX, TAGS.AZURE, TAGS.JENKINS, TAGS.DEVOPS],
+    tags: [TAGS.AWS, TAGS.TERRAFORM, TAGS.DOCKER, TAGS.KUBERNETES, TAGS.LINUX, TAGS.AZURE, TAGS.DEVOPS],
     description:
       'Deployed a two-tier Python Flask application using Docker and Docker Compose for container orchestration and local testing.',
     link: {
