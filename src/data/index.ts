@@ -198,28 +198,32 @@ export const PROJECTS = [
     techStack: ['S3', 'CloudFront', 'Route 53', 'IAM'],
     description:
       'Deployed and hosted a fully static website using Amazon S3, integrated with CloudFront for global content delivery and Route 53 for DNS management. Configured a custom domain with SSL/TLS (HTTPS).',
-    link: { label: '', href: '' }
+    link: { label: '', href: '' },
+    tags: []
   },
   {
     title: 'Highly Available Web App with Auto Scaling & Load Balancer',
     techStack: ['EC2', 'ALB', 'Auto Scaling', 'Route 53', 'CloudWatch', 'SNS'],
     description:
       'Launched a scalable web application using EC2 instances behind an Application Load Balancer (ALB). Implemented Auto Scaling Groups for dynamic resource management. Integrated Route 53 for DNS, CloudWatch for monitoring, and SNS for alerts.',
-    link: { label: '', href: '' }
+    link: { label: '', href: '' },
+    tags: []
   },
   {
     title: 'Automated EC2 Infrastructure with CloudFormation',
     techStack: ['CloudFormation', 'EC2', 'ALB', 'Auto Scaling', 'IAM', 'User Data', 'Linux', 'Windows'],
     description:
       'Created a single CloudFormation YAML template to launch both Linux and Windows EC2 instances. Integrated ALB and Auto Scaling for high availability. Used User Data to auto-install Docker on Linux instances and configured IAM roles for secure access.',
-    link: { label: '', href: '' }
+    link: { label: '', href: '' },
+    tags: []
   },
   {
     title: 'CI/CD with AWS CodePipeline (Fully Managed Deployment)',
     techStack: ['CodePipeline', 'CodeCommit', 'CodeBuild', 'CodeDeploy', 'EC2', 'IAM'],
     description:
       'Built a fully managed CI/CD pipeline using AWS CodePipeline, integrating CodeCommit, CodeBuild, and CodeDeploy to deploy applications on EC2 instances. Implemented build, test, and deployment stages with rollback support.',
-    link: { label: '', href: '' }
+    link: { label: '', href: '' },
+    tags: []
   },
   {
     title: 'CI/CD full DevSecOps CodePipeline (Fully automated Deployment)',
@@ -230,14 +234,16 @@ export const PROJECTS = [
     ],
     description:
       'Built a full DevSecOps pipeline combining CI (Jenkins), containerization (Docker), security scans (SonarQube, Trivy), infrastructure as code (Terraform, Ansible), and continuous delivery with ArgoCD and Helm for monitoring.',
-    link: { label: '', href: '' }
+    link: { label: '', href: '' },
+    tags: []
   },
   {
     title: 'Lambda Scheduled EC2 Start/Stop Automation',
     techStack: ['Lambda', 'EC2', 'CloudWatch Events', 'IAM', 'Python (Boto3)'],
     description:
       'Automated scheduled start/stop of EC2 instances using AWS Lambda (Python), triggered by CloudWatch Events to reduce costs during non-peak hours.',
-    link: { label: '', href: '' }
+    link: { label: '', href: '' },
+    tags: []
   },
   {
     title: 'Sample Flask App Full Pipeline',
@@ -248,7 +254,8 @@ export const PROJECTS = [
     ],
     description:
       'Deployed a Python Flask project on kubeadm using a Jenkins CI pipeline and ArgoCD for continuous delivery. Implemented monitoring and quality checks as part of the pipeline.',
-    link: { label: 'Full Jenkins Pipeline', href: 'https://github.com/sanjaymewada/fullpipeline' }
+    link: { label: 'Full Jenkins Pipeline', href: 'https://github.com/sanjaymewada/fullpipeline' },
+    tags: []
   },
   {
     title: 'Prescripto - Doctor Appointment Web App',
@@ -258,7 +265,8 @@ export const PROJECTS = [
     link: {
       label: 'Prescripto',
       href: 'https://github.com/sanjaymewada/prescripto_full-stack_doctor_appointment_app.git'
-    }
+    },
+    tags: []
   },
   {
     title: 'Expenses-Tracker-WebApp',
@@ -268,7 +276,8 @@ export const PROJECTS = [
     link: {
       label: 'Expenses-Tracker',
       href: 'https://github.com/sanjaymewada/Expenses-Tracker-WebApp.git'
-    }
+    },
+    tags: []
   },
   {
     title: 'Two-tier-flask-app',
@@ -278,6 +287,7 @@ export const PROJECTS = [
     link: {
       label: 'two-tier-flask-app',
       href: 'https://github.com/sanjaymewada/two-tier-flask-app.git'
-    }
+    },
+    tags: []
   }
 ];
