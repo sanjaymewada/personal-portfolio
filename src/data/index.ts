@@ -56,7 +56,7 @@ export const LINKS = [
   },
   {
     title: 'Resume',
-    url: 'https://cv-mocha-one.vercel.app',
+    url: 'https://cv-eight-lemon-bexb6lflhv.vercel.app/',
     icon: FileTextIcon,
   },
   {
