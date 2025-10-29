@@ -88,7 +88,7 @@ export function Hero() {
               <Avatar className="size-40 md:size-48 shadow-xl border-4 border-white dark:border-neutral-900 relative z-10 group-hover:scale-105 transition-transform duration-300">
                 <AvatarImage 
                   alt={avatar.name} 
-                  src="/assets/avatar.png"
+                  src="/avatar.png"
                   className="object-cover"
                 />
                 <AvatarFallback className="font-mono font-bold">
